@@ -1,0 +1,8 @@
+break_type,expected_type,injected,flagged,classified_correctly
+AMOUNT_ERROR,Amount mismatch,50,50,47
+CASH_NOT_POSTED,"Cash received, not posted",80,80,80
+DUPLICATE_POSTING,Duplicate posting,70,70,70
+MISAPPLIED,Misapplied payment,30,30,30
+POSTED_NO_CASH,Posted without bank cash,70,70,70
+UNREADABLE_REF,Reference unreadable - confirm match,99,99,99
+UNREVERSED_RETURN,Bank return not reflected in ledger,50,50,50

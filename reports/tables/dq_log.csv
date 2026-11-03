@@ -1,0 +1,9 @@
+check_name,rule,rows_affected,treatment
+Duplicate loan records,Same loan_id appears more than once in the origination file,72,Kept first record per loan_id
+Inconsistent grade format,Grade not a clean upper-case single letter (case / trailing spaces),60,Trimmed and upper-cased
+Missing annual income,annual_inc is blank,144,"Left as NULL; excluded from income-based metrics, loan retained"
+Impossible DTI,Debt-to-income outside 0-100,48,Set to NULL (placeholder value 999); loan retained
+Orphan performance rows,Performance record with no matching loan,0,Would be excluded (none found)
+Loans with no performance,Loan with no monthly record,0,Would be excluded (none found)
+Payment split mismatch,interest_paid + principal_paid differs from paid_amount by more than $0.02,0,Would be investigated (none found)
+Principal roll-forward break,loan_amnt <> principal repaid + charged-off principal + closing balance (tolerance $1),0,Would be investigated (none found)

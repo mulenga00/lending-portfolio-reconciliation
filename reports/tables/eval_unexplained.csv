@@ -1,0 +1,1 @@
+item_id,side,ledger_txn_id,bank_id,loan_id,item_date,ledger_cents,bank_cents,variance_cents,exception_type,exception_class,root_cause,recommended_action,owner,priority,age_days
